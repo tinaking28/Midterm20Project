@@ -1,21 +1,29 @@
+header {
+  display: flex;
+
+}
+
+h1 {
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
 ul {
   list-style-type: none;
   font-size: 20px;
-  width: 800px;
-  height: 30px;
-  background-color: #f1f1f1;
-  border: 2px solid #1f1f2e;
+  height: 40px;
+
 }
 li {
-  display: inline;
+  display: inline-block;
 }
-li a{
-  padding: 20px;
-  font-family: 'Barlow', sans-serif;
+li a {
+  padding: 0px 30px;
   text-decoration: none;
   color: #1f1f2e;
 }
 li a:hover {
+  padding: 2px 30px;
   background-color: #1f1f2e;
   color: white;
 }

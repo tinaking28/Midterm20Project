@@ -5,7 +5,48 @@
     <title>Just Baked</title>
     <link type="text/css" rel="stylesheet" href="index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .contactpic {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url("coverphoto.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px;
+            position: relative;
+            background-attachment: fixed;
+            height: 60vh;
+            padding-top: 5vw;
+            padding-bottom: 5vw;
+        }
 
+        .contactpic #top {
+            text-align: center;
+            font-size: 5vw;
+            font-family: 'Righteous', cursive;
+        }
+
+        .contactpic #bottom {
+            text-align: center;
+            font-size: 10vw;
+            font-family: 'Righteous', cursive;
+        }
+
+        #contactForm {
+            padding: 5vh;
+            text-align: center;
+            width: 40vw;
+        }
+
+        form input{
+            border-radius: 5px;
+            height: 5vh;
+            width: 40vw;
+
+        }
+    </style>
     <div id="fb-root"></div>
     <script
         async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
@@ -24,11 +65,21 @@
             <li><a href="menu.html">Menu</a></li>
         </ul>
     </header>
-
-    <div>
-
+    <div class="contactpic">
+        
+        <h2 id="top">Want to get in touch with us?</h1><br />
+        <h2 id="bottom">CONTACT US</h1>
     </div>
+    
+    <form id = "contactForm">
+        <p style="text-align: left; box-sizing: border-box;">FIRST NAME: </p>
+        <br><input id="fname"><br><br>
+        LAST NAME: <br><input id="lname"><br><br>
+        EMAIL: <br><input id="email"><br><br>
+        COMMENTS: <br><input id="comments"><br><br>
 
+        <button id="submit">Submit</button><br/><br/>
+    </form>
     <footer>
          <ul>
             <li><a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @justbaked7</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

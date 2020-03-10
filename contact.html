@@ -6,6 +6,7 @@
     <link type="text/css" rel="stylesheet" href="index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <style type="text/css">
+
         .contactpic {
             width: 100%;
             margin-left: auto;
@@ -36,21 +37,72 @@
 
         #contactForm {
             padding: 5vh;
-            text-align: center;
             width: 40vw;
+            justify-content: center;
+            display: inline-block;
+            font-family: 'Righteous', cursive;
+
+
+        }
+        #formDiv {
+            display: flex; 
+            justify-content: center;
+            width: 100%;
+
         }
 
         form input{
             border-radius: 5px;
             height: 5vh;
             width: 40vw;
+            font-size: 16px;
+            border: 2px solid #bde2eb;
+            padding-left: 5px;
+            font-family: "arial";
 
         }
+        #comments{
+            border-radius: 5px;
+            height: 15vh;
+            width: 40vw;
+            font-size: 16px;
+            font-family: "arial";
+            border: 2px solid #bde2eb;
+
+        }
+        #submit{
+            font-size: 16px;
+            font-family: 'Righteous', cursive;
+            background-color: #bde2eb;
+            border-radius: 5px;
+            height: 6vh;
+            width: 20vh;
+            border:2px solid black;
+
+        }
+        #thanks{
+            opacity: 0%;
+            height: 15vh;
+        }
+        #message{
+            display: none; 
+            margin-top: 40px; 
+            font-family: 'Righteous', cursive;
+            font-size: 18px;
+        }
     </style>
-    <div id="fb-root"></div>
-    <script
-        async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
-    </script>
+<div id="fb-root"></div>
+<script
+    async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous">
+</script>
+
+
+
 </head>
 <body>
     <header>
@@ -66,20 +118,28 @@
         </ul>
     </header>
     <div class="contactpic">
-        
         <h2 id="top">Want to get in touch with us?</h1><br />
         <h2 id="bottom">CONTACT US</h1>
     </div>
-    
-    <form id = "contactForm">
-        <p style="text-align: left; box-sizing: border-box;">FIRST NAME: </p>
-        <br><input id="fname"><br><br>
-        LAST NAME: <br><input id="lname"><br><br>
-        EMAIL: <br><input id="email"><br><br>
-        COMMENTS: <br><input id="comments"><br><br>
+    <div id="formDiv">
+        <form id = "contactForm">
+           
+            FIRST NAME: <input id="fname"><br><br>
+            LAST NAME: <br><input id="lname"><br><br>
+            EMAIL: <br><input id="email"><br><br>
+            COMMENTS: <br><textarea id="comments"></textarea><br><br>
 
-        <button id="submit">Submit</button><br/><br/>
-    </form>
+            <button id="submit" type="submit">Submit</button><br/><br/>
+        </form>
+    </div>
+    <div style=" display: flex; justify-content: center; height: 20vh;">
+        <p id="message">
+            Thanks! We will get <br> back to you ASAP.
+        </p>
+        <img id="thanks" src="cupcakecartoon.png">
+    </div>
+    
+
     <footer>
          <ul>
             <li><a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @justbaked7</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -88,5 +148,27 @@
             </li>
         </ul>
     </footer>
+    <script language="javascript">
+        function validateEmail(){
+            var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+           if(emailPattern.test($('#email').val())){
+                return true;
+            }else{
+                return false;
+            }   
+        }
+        $(document).ready(function(){
+            $('form').submit( function (e) { 
+                e.preventDefault();
+                if(validateEmail()){
+                    $('#message').slideDown();
+                    $('#thanks').animate({opacity:'100%'}, "slow");
+                }else{
+                    $('#email').val("required");
+                }
+                
+            });  
+        });
+    </script>
 </body>
 </html>

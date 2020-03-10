@@ -5,14 +5,45 @@
     <title>Just Baked</title>
     <link type="text/css" rel="stylesheet" href="index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="cupcake-icon3.png">
 
-    <div id="fb-root"></div>
-    <script
-        async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    <script>
+        function myFunction(x) {
+            x.classList
+        }
     </script>
+
 </head>
 <body>
-    <header>
+    <nav>
+        <ul>
+            <li class="pageTitle">Just Baked</li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="display.html">Display</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+            <div class="container" id="burger-button" onclick="myFunction(this)">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+    </nav>
+
+    <ul id="js-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="display.html">Display</a></li>
+        <li><a href="menu.html">Menu</a></li>
+    </ul>
+
+    <!--<header>
         <h1>Just Baked</h1>
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
@@ -23,21 +54,38 @@
             <li><a href="display.html">Display</a></li>
             <li><a href="menu.html">Menu</a></li>
         </ul>
-    </header>
+    </header> -->
 
     <div class="pic">
-        
-        <h1 id="top">Just Baked</h1><br />
-        <h1 id="bottom">Gourmet Cupcakes, Cakes, Cookies and More!</h1>
+        <h1 id="top">Just Baked</h1>
+        <h2 id="bottom">Gourmet Cupcakes, Cakes, Cookies and More!</h2>
     </div>
 
+    <div id="fb-root"></div>
+    <script 
+        async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    </script>
+
     <footer>
-         <ul>
-            <li><a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @justbaked7</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </li>
-            <li><div class="fb-like" data-href="https://www.facebook.com/wejustbakedcupcakes/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
-            </li>
-        </ul>
+        <h3>Connect With Us:</h3>
+        <a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+        data-lang="en" data-show-count="false">Follow @justbaked7
+        </a>
+        <script
+            async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+        </script>
+        <br /> <br />
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button" data-action="recommend" data-size="small" data-share="true">
+        </div>
+        <br /> <br />
+        <div class="footer-info">
+            <strong>Come Visit Us:</strong> 23 Summer Street, Medford MA 02155 <br /> 
+            <strong>Call Us:</strong> (403) 634-9081 <br /> 
+            <strong>Email Us:</strong> <a href = "mailto:justbaked@gmail.com"> 
+                                    justbaked@gmail.com</a></p>
+        </div>
     </footer>
+
 </body>
 </html>

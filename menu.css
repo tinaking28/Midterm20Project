@@ -41,35 +41,25 @@ li a:hover {
 }
 
 .main_area {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bde2eb;
+  height: 500px;
 }
 
-.main_area {
-    background-color: #bde2eb;
-    width: 100%;
-    /*background-position: center center;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0px;
-    position: relative;
-    /*background-attachment: fixed;*/
-    height: 70vh;
+.title{
+  text-align: center;
 }
 
 .menu_area {
-  position: absolute;
   width: 50%;
-  margin-top: 65px;
   margin-bottom: auto;
   margin-right: auto;
   margin-left: auto;
-  padding-left: auto;
-  height: 75%;
   border: solid 2px #000;
   background-color: #fff;
-  position: center center;
 }
 
 /*

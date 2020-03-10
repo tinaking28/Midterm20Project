@@ -3,13 +3,43 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Just Baked</title>
-    <link type="text/css" rel="stylesheet" href="menu.css"/>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 
     <div id="fb-root"></div>
     <script
         async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
     </script>
+    <style type="text/css">
+        .main_area {
+          width: 100%;
+          padding-top: 50px;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: #bde2eb;
+          height: 500px;
+        }
+
+        .title{
+          text-align: center;
+        }
+
+        .menu_area {
+          width: 50%;
+          min-height: 80%;
+          margin-bottom: auto;
+          margin-right: auto;
+          margin-left: auto;
+          border: solid 2px #000;
+          background-color: #fff;
+        }
+
+        hr {
+            width: 50%;
+            color: #bde2eb;
+            border: 1px solid #bde2eb;
+        }
+    </style>        
 </head>
 <body>
     <header>
@@ -27,7 +57,27 @@
 
     <div class="main_area">
         <div class="menu_area">
-            <h1>hello there</h1>
+            <h1 class="title">Prices</h1>
+            <hr>
+            <ul style="text-align: center;">
+                <li>| 1 Cupcake - $2.25 </li>
+                <li>| 3 Cupcakes - $6.00 </li>
+                <li>| 12 Cupcakes - $10.00 |</li>
+            </ul>
+            <br />
+            <h1 class="title">Flavors</h1>
+            <hr>
+            <ul style="text-align: center;">
+                <li>| Mango </li>
+                <li>| Pomegreanate Pork </li>
+                <li>| Buffalo Chicken </li>
+                <li>| Marshmallow Squash |</li>
+                <li>| Lavender and Lemon </li>
+                <li>| Goat Milk Caramel </li>
+                <li>| Scrambled Egg </li>
+                <li>| MSG |</li>
+            </ul>
+            <h1 style="text-align: center; font-size: 20px;">To see pictures of the flavors, see the <a href="display.html">Display</a> page.</h1>
         </div>
         
     </div>

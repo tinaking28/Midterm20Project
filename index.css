@@ -2,12 +2,7 @@ body {
     margin: 0px;
 }
 
-/*header {
-    display: flex;
-}*/
-
 .container {
-
     cursor: pointer;
     vertical-align: middle;
 }
@@ -30,8 +25,35 @@ nav {
     line-height: -20px;
 }
 
+.js-nav {
+    font-family: 'Righteous', cursive;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    text-align: center;
+    font-size: 17px;
+    margin-top: -4.5em;
+}
 
+.js-nav ul {
+    /*text-align: center;*/
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
 
+.js-nav ul li {
+
+    list-style: none;
+    vertical-align: middle;
+    line-height: 180%;
+}
+
+.js-nav ul li a {
+    text-decoration: none;
+    color: #1f1f2e;
+}
 
 nav ul {
     /*text-align: center;*/
@@ -52,6 +74,10 @@ nav ul {
     .container {
         display: none;
     }
+
+    .js-nav{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -61,6 +87,10 @@ nav ul {
 
     nav .pageTitle {
         font-size: 25px;
+    }
+
+    .js-nav{
+        display: none;
     }
 }
 
@@ -72,10 +102,14 @@ nav ul {
     nav .pageTitle {
         font-size: 20px;
     }
+
+    .js-nav{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 575px) {
-    li a {
+    nav li a {
         display: none;
     }
 
@@ -90,8 +124,8 @@ nav ul {
         margin-top: -4em;
     }
 
-    #js-nav {
-        display: inline-block;
+    .js-nav{
+        display: none;
     }
 }
 
@@ -110,7 +144,6 @@ nav ul li a {
 nav a:hover:not(.pageTitle) {
     color: #fff;
     background: #045c8f;
-    color: #fff;
     margin: -5px;
     border: 5px solid transparent;
 }
@@ -121,24 +154,6 @@ nav ul li a.active {
     margin: -5px;
     border: 5px solid transparent;
 }
-
-/*.pic {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}*/
-
-/*.pic {
-    background-image: url("teal-cupcakes2.jpg");
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0px;
-    position: relative;
-    background-attachment: fixed;
-    height: 70vh;
-}*/
 
 .pic {
     width: 100%;
@@ -196,6 +211,10 @@ nav ul li a.active {
     .pic #bottom {
         font-size: 3.5vw;
     }
+
+    .pic {
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -204,8 +223,80 @@ nav ul li a.active {
     }
 
     .pic #bottom {
-        font-size: 3vw;
+        font-size: 3.7vw;
     }
+}
+
+.main-body {
+    margin: 40px;
+    font-family: 'Sen', sans-serif;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.flex-container {
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.item {
+    flex-grow: 1;
+    height: 100%;
+    min-height: 150px;
+    background-color: #bde2eb;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    line-height: 160%;
+}
+
+@media screen and (max-width: 2000px) {
+    .flex-container {
+        display: flex;
+    }
+
+    .item {
+        width: 32%;
+    }
+
+    .item + .item {
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .flex-container {
+        display: inline-block;
+    }
+
+    .item {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .item + .item {
+        margin-left: 0px;
+    }
+}
+
+.flex-header {
+    font-family: 'Righteous', cursive;
+    font-size: 22px;
+    color: #000;
+}
+
+.item a:hover {
+    color: #fff;
+}
+
+.flex-content {
+    font-family: 'Sen', sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
 }
 
 footer {
@@ -222,5 +313,5 @@ footer {
 
 .footer-info {
     line-height: 2em;
-    font-family: 'Sen', sans-serif;;
+    font-family: 'Sen', sans-serif;
 }

@@ -3,28 +3,121 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Just Baked</title>
-    <link type="text/css" rel="stylesheet" href="reviews.css"/>
-    <script src="https://kit.fontawesome.com/d4f32f1834.js" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d4f32f1834.js" crossorigin="anonymous"></script>
 
-    <div id="fb-root"></div>
-    <script
-        async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    <style>
+        .active {
+            padding: 2px 40px;
+            background-color: #1f1f2e;
+            color: white;
+        }
+
+        #all-reviews{
+            background-color: #bde2eb;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: flex-start;
+            flex-grow: 2;
+            height: auto;
+            padding: 30px;
+        }
+
+        .col{
+            flex: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .review{
+            background-color: #fff;
+            margin: 15px;
+            padding: 25px 20px 10px;
+            border-radius: 25px;
+            width: 80%;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .review p{
+            color: #1f1f2e;
+        }
+
+        i{
+            color: #1f1f2e;
+        }
+
+        @media (min-width: 600px) {
+            .col {
+            flex: 50%;
+            max-width: 50%;
+            }
+        }
+
+        @media (min-width: 775px) {
+            .col {
+            flex: 33.33%;
+            max-width: 33.33%;
+            }
+        }
+
+        @media (min-width: 990px) {
+            .col {
+            flex: 25%;
+            max-width: 25%;
+            }
+        }
+    </style>
+
+    <script>
+        
+        function myFunction() {
+            let x = document.querySelector(".js-nav");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        
     </script>
+
 </head>
 <body>
-    <header>
-        <h1>Just Baked</h1>
+    <nav>
         <ul>
+            <li class="pageTitle">Just Baked</li>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="locations.html">Locations</a></li>
             <li><a href="reviews.html" class="active">Reviews</a></li>
-            <li><a href="display.html">Display</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="menu.html">Menu</a></li>
         </ul>
-    </header>
+            <div class="container" id="burger-button" onclick="myFunction()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+    </nav>
+
+    <div class="js-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </div>
 
     <div id="all-reviews">
         <div class="col">
@@ -69,7 +162,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>____ and _________ is the move you wanna make! These flavors were spectacular! The texture is perfect, the cake is moist, and the icing is the perfect amount. I will say its suuuuupper sweet but hey it's a cupcake! The line was out the door when I arrived so I'm very glad this place did not disappoint. I'll definitely be back to try out some more.</p>
+                <p>Golden Mango and MSG is the move you wanna make! These flavors were spectacular! The texture is perfect, the cake is moist, and the icing is the perfect amount. I will say its suuuuupper sweet but hey it's a cupcake! The line was out the door when I arrived so I'm very glad this place did not disappoint. I'll definitely be back to try out some more.</p>
             </div>
 
             <div class="review">
@@ -137,9 +230,9 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <p>Waited in line as expected but it was worth it. The _____ and _____ were my favorites, both true to the flavor but not overpowering and sweet.</p>
-                <p>The ______ and ______ were the second best I liked. _____ and the ________ were good but too sweet to finish in one sitting.</p> 
-                <p>The only downside to the flavor choices is there was nothing on the fruity or balanced side to offset the sugar/ decadence from the other ____ /_____ heavy ones. A tad expensive for the size of the cupcakes.</p>
+                <p>Waited in line as expected but it was worth it. The Buffalo Chicken and Goat Milk Caramel were my favorites, both true to the flavor but not overpowering and sweet.</p>
+                <p>The Pistacho and Rose was the second best I liked. Pomegrate Pork and the Scrambled Eggs were good but too sweet to finish in one sitting.</p> 
+                <p>The only downside to the flavor choices is there was nothing on the fruity or balanced side to offset the sugar/ decadence from the other chocolate heavy ones. A tad expensive for the size of the cupcakes.</p>
             </div>
         </div>
 
@@ -152,7 +245,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>You must get the _______. I never thought a cupcake could change my framework for thinking about desserts as a whole (literally redefines the category).</p>
+                <p>You must get the Golden Mango. I never thought a cupcake could change my framework for thinking about desserts as a whole (literally redefines the category).</p>
 
                 <p>You will thank me later.</p>
             </div>
@@ -165,13 +258,13 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <p>Wellll hello there Just Baked!!! I went here a fiew times when I visited ____ and could not pass up coming here for some cupcakes. Of course the hype got me into coming here plus it's a family owned cupcake food truck.</p>
+                <p>Wellll hello there Just Baked!!! I went here a fiew times when I visited Brooklyn and could not pass up coming here for some cupcakes. Of course the hype got me into coming here plus it's a family owned cupcake food truck.</p>
                 <p>First off, the service was great but I must say I came here in the cold winter days and the long line in the cold did not help whatsoever.</p>
                 <p>After waiting for about 30-40 minutes we finally got infront of the line.</p>
                 <p>The girls at the cashier were super sweet and helped us choose any cupcakes we desired.</p>
                 <p>The cupcakes all looked amazing I was so excited to try!!
-                ____ was good ! the cupcakes on the other hand were ok.. I found them to be Wayyyy to sweet for me.. The cupcakes are super pricey as well.</p>
-                <p> Overall it was quite an experience and definitely liked the fact that I can say I tried it  .. but I'm not sure I'd come back here plus we were talking to a bunch of _____ locals and even they agreed on the taste and said there's way better cupcake shops across ____ that taste way better than here lol not my words at all.</p>
+                    Goat Milk Caramel was good ! the other cupcakes on the other hand were ok.. I found them to be Wayyyy to sweet for me personally, but maybe not for you.. The cupcakes are super pricey as well.</p>
+                <p> Overall it was quite an experience and definitely liked the fact that I can say I tried it  .. but I'm not sure I'd come back here plus we were talking to a bunch of Brooklyn locals and even they agreed on the taste and said there's way better cupcake shops across Brooklyn that taste way better than here lol not my words at all.</p>
                 <p>I don't think I'll be back but I can say it was definitely a fun experience.</p>
             </div>
         </div>
@@ -187,7 +280,7 @@
                 </div>
                 <p>Been loving these cupcakes for years and years - nothing quite compares.</p>
                 <p>More often than not, there's quite a sizable line -- it moves (relatively) quickly and buys you time to decide what flavor(s) you want! Alternatively, order online in advance and you can skip the line. Online orders also come with free personalization for toppings/fondant.</p>
-                <p>I've tried many of their flavors, and they're all wonderful. Just pick the ones that look and sound the most appetizing to you; I've never once been disappointed. Their seasonal flavors are always great as well. My all-time favorite is the ______. Mmmmm.</p>
+                <p>I've tried many of their flavors, and they're all wonderful. Just pick the ones that look and sound the most appetizing to you; I've never once been disappointed. Their seasonal flavors are always great as well. My all-time favorite is the Scrambled Eggs. Mmmmm.</p>
                 <p>The service here is efficient, and friendly enough. They're busy, so they try to get people in and out to keep the line moving.</p>
             </div>
 
@@ -199,7 +292,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>Lived up to ALL the expectations!!! What a surreal experience. The line was ok, a little long but it moved fairly quick. Had a delicious _____ and ________ cupcake. Our cupcakes were ready upon ordering and they MELTED in your mouth! You must go if you're in ________.</p>
+                <p>Lived up to ALL the expectations!!! What a surreal experience. The line was ok, a little long but it moved fairly quick. Had a delicious Scrambled Eggs and Goat Milk Caramel cupcake. Our cupcakes were ready upon ordering and they MELTED in your mouth! You must go if you're in the middle of ocean.</p>
             </div>
 
             <div class="review">
@@ -250,7 +343,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <p>It's been a few years since I've visited. My husband and I couldn't wait to come back and try them. We remembered them being so moist and delicious. However, this visit I didn't think they were as moist as they could've been. There frostings really made up for that though. The ________ frosting is amazing. Our favorite of the bunch was the ________ and the _____. The line is always long here but it tends to move fast which is great.</p>
+                <p>It's been a few years since I've visited. My husband and I couldn't wait to come back and try them. We remembered them being so moist and delicious. However, this visit I didn't think they were as moist as they could've been. There frostings really made up for that though. The scrambled eggs frosting is amazing. Our favorite of the bunch was the goat milk caramel and the MSG. The line is always long here but it tends to move fast which is great.</p>
             </div>
         </div>
 
@@ -306,7 +399,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <p>Easily the best cupcake I have ever had! I tried the _______. Very moist and flavorful. Great for the sweet tooth!</p>
+                <p>Easily the best cupcake I have ever had! I tried the Scrambled Eggs Cupcakes. Very moist and flavorful. Great for the sweet tooth!</p>
             </div>
             <div class="review">
                 <div class="stars">
@@ -386,7 +479,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <p>Delicious (and popular!) cupcakes in dozens of flavors. I would suggest ordering a half dozen and maybe sharing with a friend or two. I loved the _____ and ___ and my friend loves the traditional birthday cupcakes. Who doesn't love cupcakes?!? Yum!</p>
+                <p>Delicious (and popular!) cupcakes in dozens of flavors. I would suggest ordering a half dozen and maybe sharing with a friend or two. I loved the Goat Milk Caramel and Scrambled Eggs and my friend loves the MSG cupcakes. Who doesn't love cupcakes?!? Yum!</p>
             </div>
         </div>
 
@@ -577,13 +670,30 @@
         </div>
     </div>
 
+    <div id="fb-root"></div>
+    <script 
+        async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    </script>
+
     <footer>
-         <ul>
-            <li><a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @justbaked7</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </li>
-            <li><div class="fb-like" data-href="https://www.facebook.com/wejustbakedcupcakes/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
-            </li>
-        </ul>
+        <h3>Connect With Us:</h3>
+        <a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+        data-lang="en" data-show-count="false">Follow @justbaked7
+        </a>
+        <script
+            async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+        </script>
+        <br /> <br />
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button" data-action="recommend" data-size="small" data-share="true">
+        </div>
+        <br /> <br />
+        <div class="footer-info">
+            <strong>Visit Us:</strong> See our <a href="location.html">locations</a> page <br /> 
+            <strong>Call Us:</strong> (403) 634-9081 <br /> 
+            <strong>Email Us:</strong> <a href = "mailto:justbaked@gmail.com"> 
+                                    justbaked@gmail.com</a></p>
+        </div>
     </footer>
 </body>
 </html>

@@ -5,39 +5,110 @@
     <title>Just Baked</title>
     <link type="text/css" rel="stylesheet" href="index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="cupcake-icon3.png">
 
-    <div id="fb-root"></div>
-    <script
-        async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    <script>
+        
+        function myFunction() {
+            let x = document.querySelector(".js-nav");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        
     </script>
+
 </head>
 <body>
-    <header>
-        <h1>Just Baked</h1>
+    <nav>
         <ul>
+            <li class="pageTitle">Just Baked</li>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="locations.html">Locations</a></li>
             <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="display.html">Display</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="menu.html">Menu</a></li>
         </ul>
-    </header>
+            <div class="container" id="burger-button" onclick="myFunction()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+    </nav>
 
-    <div class="pic">
-        
-        <h1 id="top">Just Baked</h1><br />
-        <h1 id="bottom">Gourmet Cupcakes, Cakes, Cookies and More!</h1>
+    <div class="js-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
     </div>
 
+    <div class="pic">
+        <h1 id="top">Just Baked</h1>
+        <h2 id="bottom">Gourmet Cupcakes, Cakes, Cookies and More!</h2>
+    </div>
+
+    <div class="main-body">
+         <a href="location.html">Located</a> in convenient locations and baked fresh in small batches throughout the day, our products are handcrafted from the finest ingredients. We offer cupcakes, cookies, layer cakes and bake boxes. These deliciously sophisticated updates on American classic are perfect for every occasion. See our <a href="menu.html">menu</a> for all of our delicious offerings. You can customize too! We even make party planning a breeze with our Catering Service! Sprinkles supports catering & events for every occasion - gender reveals, birthday parties, graduations, promotions, friendships, weddings, and many more. See the <a href="display.html">photos</a> page for all the amazing options we have available. Don't believe how incredible we are? Read some real <a href="reviews.html">reviews</a> and find out for yourself!
+    </div>
+
+    <div class="flex-container">
+        <div class="item">
+            <a class="flex-header" href="menu.html">About Us</a>
+            <div class="flex-content">
+                We are a locally-owned bake shop that makes everything from scratch! We specialize in meticulously prepared cupcakes, but also have a wide variety of other delicious baked goods.
+            </div>
+        </div>
+        <div class="item">
+            <a class="flex-header" href="menu.html">Menu</a>
+            <div class="flex-content">
+                Discover all of our amazing menu items! We have a wide variety of fun, creative flavors that always bring a smile to our customers faces! Want to suggest something? <a href="contact.html">Contact Us!</a>
+            </div>
+        </div>
+        <div class="item">
+            <a class="flex-header" href="menu.html">Reviews</a>
+            <div class="flex-content">
+                Read all about all the people who adore our cupcakes! Reviews from people around the country, food critics, and most importantly: KIDS. We love our customer and they love us!
+            </div>
+        </div>
+
+    </div>
+
+    <div id="fb-root"></div>
+    <script 
+        async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    </script>
+
     <footer>
-         <ul>
-            <li><a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @justbaked7</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </li>
-            <li><div class="fb-like" data-href="https://www.facebook.com/wejustbakedcupcakes/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
-            </li>
-        </ul>
+        <h3>Connect With Us:</h3>
+        <a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+        data-lang="en" data-show-count="false">Follow @justbaked7
+        </a>
+        <script
+            async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+        </script>
+        <br /> <br />
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button" data-action="recommend" data-size="small" data-share="true">
+        </div>
+        <br /> <br />
+        <div class="footer-info">
+            <strong>Visit Us:</strong> See our <a href="location.html">locations</a> page <br /> 
+            <strong>Call Us:</strong> (403) 634-9081 <br /> 
+            <strong>Email Us:</strong> <a href = "mailto:justbaked@gmail.com"> 
+                                    justbaked@gmail.com</a></p>
+        </div>
     </footer>
+
 </body>
 </html>

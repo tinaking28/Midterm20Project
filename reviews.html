@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Just Baked</title>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d4f32f1834.js" crossorigin="anonymous"></script>
+
+    <style>
+        .active {
+            padding: 2px 40px;
+            background-color: #1f1f2e;
+            color: white;
+        }
+
+        #all-reviews{
+            background-color: #bde2eb;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: flex-start;
+            flex-grow: 2;
+            height: auto;
+            padding: 30px;
+        }
+
+        .col{
+            flex: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .review{
+            background-color: #fff;
+            margin: 15px;
+            padding: 25px 20px 10px;
+            border-radius: 25px;
+            width: 80%;
+            font-family: 'Sen', sans-serif;
+        }
+
+        .review p{
+            color: #1f1f2e;
+        }
+
+        i{
+            color: #1f1f2e;
+        }
+
+        @media (min-width: 600px) {
+            .col {
+            flex: 50%;
+            max-width: 50%;
+            }
+        }
+
+        @media (min-width: 775px) {
+            .col {
+            flex: 33.33%;
+            max-width: 33.33%;
+            }
+        }
+
+        @media (min-width: 990px) {
+            .col {
+            flex: 25%;
+            max-width: 25%;
+            }
+        }
+    </style>
+
+    <script>
+        
+        function myFunction() {
+            let x = document.querySelector(".js-nav");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        
+    </script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="pageTitle">Just Baked</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="reviews.html" class="active">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+            <div class="container" id="burger-button" onclick="myFunction()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+    </nav>
+
+    <div class="js-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </div>
+
+    <div id="all-reviews">
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I think I tasted heaven. These cupcakes are that good.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Honestly, I would not know what I would do without Just Baked. I am not moving out of this city anytime soon because of Just Baked and they better not go anywhere. They are often parked by my work and I have no self control, so I get a snack from there at least three or four times a week. Their desserts are my favorite desserts in the universe. Their flavors are so unique, but extremely tasty at the same time. I love their ... because... </p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Good, but overpriced.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Golden Mango and MSG is the move you wanna make! These flavors were spectacular! The texture is perfect, the cake is moist, and the icing is the perfect amount. I will say its suuuuupper sweet but hey it's a cupcake! The line was out the door when I arrived so I'm very glad this place did not disappoint. I'll definitely be back to try out some more.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Will get another cupcake next time I see the truck. I have had pretty good cupcakes from them. I just won't go through the effort to find them.</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I wish I knew how to bake like Just Baked.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>all my allowance money goes towards buying desserts from here.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Over the years I have visited this location and waited hours to get the the best cupcakes! But this time I was EXTREMELY disappointed.  My cupcakes were as dry as sandpaper. I've never had a bad experience before but these were awful! They were stale and tasted like they were made weeks ago. Hope their quality isn't slipping...</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>A pretty good cupcake.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Waited in line as expected but it was worth it. The Buffalo Chicken and Goat Milk Caramel were my favorites, both true to the flavor but not overpowering and sweet.</p>
+                <p>The Pistacho and Rose was the second best I liked. Pomegrate Pork and the Scrambled Eggs were good but too sweet to finish in one sitting.</p> 
+                <p>The only downside to the flavor choices is there was nothing on the fruity or balanced side to offset the sugar/ decadence from the other chocolate heavy ones. A tad expensive for the size of the cupcakes.</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>You must get the Golden Mango. I never thought a cupcake could change my framework for thinking about desserts as a whole (literally redefines the category).</p>
+
+                <p>You will thank me later.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Wellll hello there Just Baked!!! I went here a fiew times when I visited Brooklyn and could not pass up coming here for some cupcakes. Of course the hype got me into coming here plus it's a family owned cupcake food truck.</p>
+                <p>First off, the service was great but I must say I came here in the cold winter days and the long line in the cold did not help whatsoever.</p>
+                <p>After waiting for about 30-40 minutes we finally got infront of the line.</p>
+                <p>The girls at the cashier were super sweet and helped us choose any cupcakes we desired.</p>
+                <p>The cupcakes all looked amazing I was so excited to try!!
+                    Goat Milk Caramel was good ! the other cupcakes on the other hand were ok.. I found them to be Wayyyy to sweet for me personally, but maybe not for you.. The cupcakes are super pricey as well.</p>
+                <p> Overall it was quite an experience and definitely liked the fact that I can say I tried it  .. but I'm not sure I'd come back here plus we were talking to a bunch of Brooklyn locals and even they agreed on the taste and said there's way better cupcake shops across Brooklyn that taste way better than here lol not my words at all.</p>
+                <p>I don't think I'll be back but I can say it was definitely a fun experience.</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Been loving these cupcakes for years and years - nothing quite compares.</p>
+                <p>More often than not, there's quite a sizable line -- it moves (relatively) quickly and buys you time to decide what flavor(s) you want! Alternatively, order online in advance and you can skip the line. Online orders also come with free personalization for toppings/fondant.</p>
+                <p>I've tried many of their flavors, and they're all wonderful. Just pick the ones that look and sound the most appetizing to you; I've never once been disappointed. Their seasonal flavors are always great as well. My all-time favorite is the Scrambled Eggs. Mmmmm.</p>
+                <p>The service here is efficient, and friendly enough. They're busy, so they try to get people in and out to keep the line moving.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lived up to ALL the expectations!!! What a surreal experience. The line was ok, a little long but it moved fairly quick. Had a delicious Scrambled Eggs and Goat Milk Caramel cupcake. Our cupcakes were ready upon ordering and they MELTED in your mouth! You must go if you're in the middle of ocean.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Can't really go wrong with cupcakes here. They're super tasty and will definitely satisfy your sweet tooth. However, I think they are a bit expensive given then size.</p>
+
+                <p>The line here is almost always super long, it moves decently fast.</p>
+            </div>
+        </div>
+
+        
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Honestly, I would not know what I would do without Just Baked. I am not moving out of this city anytime soon because of Just Baked and they better not go anywhere. They are often parked by my work and I have no self control, so I get a snack from there at least three or four times a week. Their desserts are my favorite desserts in the universe. Their flavors are so unique, but extremely tasty at the same time. I love their ... because... </p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Girls here not friendly!</p>
+
+                <p>It's too hot. There are so many cups and names you have no clue what you are buying. A trap for girls who need life-reinforcement! Overpriced and WAY TOO sweet for my taste buds. They box the cup cakes in neat boxes, even give you a free sample if you ask. Julia at the cashier seemed to just mope her way through the day - I mean, we tried to chat: all she cared about was sales - why did I come at all? Seriously. Go someplace else.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>It's been a few years since I've visited. My husband and I couldn't wait to come back and try them. We remembered them being so moist and delicious. However, this visit I didn't think they were as moist as they could've been. There frostings really made up for that though. The scrambled eggs frosting is amazing. Our favorite of the bunch was the goat milk caramel and the MSG. The line is always long here but it tends to move fast which is great.</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>This place has great cupcakes, but go early, as the line is regularly over 20 people, but they move it quickly...</p>
+
+                <p>And yes it is worth it</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>The only complaint I have with this place is how dare they have so many options to choose from...</p>
+                <p>Coming from someone with quite the sweet tooth, I was glad the line was long enough that I had time contemplate what I wanted. I was also glad my work husband was with me so we could each get one and at least try each other's.</p>
+                <p>We, of course, had to choose an all time favorite and then a holiday special. Both of which were decadent to the eye and delicious. They were so good I can't even remember which ones we got... something chocolate and one can never go wrong with chocolate.</p>
+                <p>Yes, the line can be long. Is it worth it? Well, if you have never been to Just Baked and have never gotten a cupcake and wanted something sweet, I'd say go for it.</p>
+            </div>
+
+            
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Yum!</p>
+                <p>I wouldn't label it "the best cupcake I'd ever had" but this store always makes me happy! Pink boxes with lots of creative pretty cupcakes! I always drop by when I'm in town! I also need a cup of water too since cupcakes are bit too sweet for me! If you're nearby a Just Baked, you should visit!</p>    
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Easily the best cupcake I have ever had! I tried the Scrambled Eggs Cupcakes. Very moist and flavorful. Great for the sweet tooth!</p>
+            </div>
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>My daughter and I come here frequently. The cupcakes are good. I initially wrote that the girls here are not very friendly, but I had a brief discussion with my daughter yesterday and have decided to change my review.</p>
+                <p>I mean. It's a job. It's challenging dealing with people, especially some of the local patrons. I think they're just doing their best.</p>
+                <p>My daughter decided to be more engaging with the girls since she comes here almost every day. I think this has helped her experience with Just Baked.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I totally love this place taking my granddaughter here was wonderful price is a little high but the best cupcakes ever</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Flavor is very good, frosting is very good, dare I say a predictable flavor that you can almost expect from a former cupcake place. Having said that, I love the flavor haha. Vanilla bean, red velvet, and carrot are my favs. They do mix up the flavors but the frosting is always the same it seems, I'd like a softer icing if that makes sense?</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>If I'm being brutally honest. I've been a couple times and either the cupcake is good, or its meh.</p>
+            </div>
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Cupcake perfection. Definitely go for one with a cream cheese based frosting-- those are the best. The cake is consistently light and fluffy. The frosting delicious. The flavors creative and the combinations perfection. I've been to countless cupcake shops and the hype here is real because this is the culmination of cupcake perfection. My only regret: that I don't live closer to a location.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>A visit to Just Baked is never a disappointment. You will get a cupcake that's moist, icing that's perfect (not too sweet or loaded with so much icing it falls off the cupcake) and it all comes in a beautiful box.</p>
+                <p>It's not quite 5 stars because the cupcakes are rather small, the prices are high, the lines are long and the ordering process is slow. For the amount of traffic that comes through this location, there should be a more expedient way to move the queue </p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Delicious (and popular!) cupcakes in dozens of flavors. I would suggest ordering a half dozen and maybe sharing with a friend or two. I loved the Goat Milk Caramel and Scrambled Eggs and my friend loves the MSG cupcakes. Who doesn't love cupcakes?!? Yum!</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Really cute food truck. My family and I got about 8 different flavors (banana, coconut, chocolate peanut butter, black and white, salted caramel, vanilla, rum cake and carrot cake). All were pretty good. The coconut one had an artificial taste to it that I didn't really care for. Maybe it was coconut extract. I loved the walnuts in the carrot cake. I just feel like carrot cake isn't carrot cake without the walnuts! I was a bit upset that they had already run out of a number of flavors by 2 pm when we went. But we were satisfied with the ones we ended up getting. The service was quick and nice enough. Overall it was a pleasant experience and I'd go to another Just Baked in another location!</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Not impressed . By their selection or actual cupcakes. Maybe it was the batch that mine was from but it tasted stale . I love cupcakes! Believe me, it doesn't take much to make a cupcake fiend like me happy. But no. I was not happy with my experience here. Pass.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>All I can say is that the cupcakes that we got from this food truck this afternoon were all BOMB!!! I mean from the frosting which was sweet(BUT NOT OVERWHELMING) and was not messy at all...the cake was baked PERFECTLY...the customer service was PHENOMENAL!!! Will definitely be back for sure!!!</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>So Good!!!! There was a long line, but it was worth it for these amazing cupcakes. Will go again soon.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Just tried one of their cupcakes for the first time Saturday and will track them down to have another one of their cupcakes.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>This place isn't just you basic cupcakery son! These cupcakes will change your whole outlook on the cup caking world! You can tell a lot of thought and time goes into each type they have.</p>
+
+                <p>Come by and grab one! Hell, grab a whole dozen!</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>I had these cupcakes at after seeing the food truck once and they tasted very good. The only problem is the wait and having to track the truck to get the cupcake.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>I love their cupcakes, but I wish that they would stay in one place. It is too much work to always track them.</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>BEST CUPCAKE IN THE WHOLE WORLD!!!!!!!! I have tried so many cupcakes before and I have never tried anything as good as Just Baked cupcakes. Whenever I am craving a cupcake, I will hunt this food truck to get a amazing cupcake.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>SO DELIOUS!!!!!!!!!!!!</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>I was at a food truck park and I wanted dessert. This place had a long line and everyone seemed to enjoy the cupcakes that they purchased, so I decided to wait buy a cupcake. After 37 MINUTES IN LINE, I wanted the ___ cupcake, but the cashier said it would not be ready for another 10 minutes. Since I already waited 37 MINUTES IN LINE, I decided to get the ____ cupcake because I was not going to wait 47 MINUTES FOR A CUPCAKE. Though the cupcake was good, I think it was overpriced and not worth 37 minutes of my time.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Best cupcakes ever! The cupcakes themselves were very moist and the icing was very soft, fluffy and sugary.  Dangerous to eat so many in one sitting without getting a sugar rush.</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I have tried all their flavors and never have eaten a bad cupcake from them. Their cupcakes taste like a bite of heaven. Each flavor is unique and is amazing, so when I want to try a new flavor, I know that the cupcake is going to taste amazing.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I cannot believe this gets anything less than 5 stars. I have tried a lot of cupcake shops and Just Baked is by far my favorite! I love that the cakes themselves are traditional size and everything I have ever tried here is so soft and never dried out. The icing is excellent and that's a lot coming from me. Normally I remove the icing because I find it too sweet. Not the case with this food truck. This is a must go whenever you are nearby one of their trucks.</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>sprinkles is better</p>
+            </div>
+
+            <div class="review">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I went to Georgetown University and was a cupcake lover, so I often waited in the long line for Georgetown cupcakes. After having a Just Baked cupcake, I can confidently say that it was better than a Georgetown cupcake and was probably the best cupcake I have ever tasted. If anyone is in the area, I suggest you to hunt down this food truck since there cupcakes are amazing.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fb-root"></div>
+    <script 
+        async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    </script>
+
+    <footer>
+        <h3>Connect With Us:</h3>
+        <a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+        data-lang="en" data-show-count="false">Follow @justbaked7
+        </a>
+        <script
+            async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+        </script>
+        <br /> <br />
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button" data-action="recommend" data-size="small" data-share="true">
+        </div>
+        <br /> <br />
+        <div class="footer-info">
+            <strong>Visit Us:</strong> See our <a href="location.html">locations</a> page <br /> 
+            <strong>Call Us:</strong> (403) 634-9081 <br /> 
+            <strong>Email Us:</strong> <a href = "mailto:justbaked@gmail.com"> 
+                                    justbaked@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>

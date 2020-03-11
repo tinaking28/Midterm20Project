@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Just Baked</title>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="cupcake-icon3.png">
+
+    <script>
+        
+        function myFunction() {
+            let x = document.querySelector(".js-nav");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        
+    </script>
+
+</head>
+<style type="text/css">
+
+        .contactpic {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url("coverphoto.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px;
+            position: relative;
+            background-attachment: fixed;
+            height: 60vh;
+            padding-top: 5vw;
+            padding-bottom: 5vw;
+        }
+
+        .contactpic #top {
+            text-align: center;
+            font-size: 5vw;
+            font-family: 'Righteous', cursive;
+        }
+
+        .contactpic #bottom {
+            text-align: center;
+            font-size: 10vw;
+            font-family: 'Righteous', cursive;
+        }
+
+        #contactForm {
+            padding: 5vh;
+            width: 40vw;
+            justify-content: center;
+            display: inline-block;
+            font-family: 'Righteous', cursive;
+
+
+        }
+        #formDiv {
+            display: flex; 
+            justify-content: center;
+            width: 100%;
+
+        }
+
+        form input{
+            border-radius: 5px;
+            height: 5vh;
+            width: 40vw;
+            font-size: 16px;
+            border: 2px solid #bde2eb;
+            padding-left: 5px;
+            font-family: 'Sen', sans-serif;
+
+        }
+        #comments{
+            border-radius: 5px;
+            height: 15vh;
+            width: 40vw;
+            font-size: 16px;
+            font-family: 'Sen', sans-serif;;
+            border: 2px solid #bde2eb;
+
+        }
+        #submit{
+            font-size: 16px;
+            font-family: 'Righteous', cursive;
+            background-color: #bde2eb;
+            border-radius: 5px;
+            height: 6vh;
+            width: 20vh;
+            border:2px solid black;
+
+        }
+        #thanks{
+            opacity: 0%;
+            height: 15vh;
+        }
+        #message{
+            display: none; 
+            margin-top: 40px; 
+            font-family: 'Righteous', cursive;
+            font-size: 18px;
+        }
+    </style>
+<body>
+    <nav>
+        <ul>
+            <li class="pageTitle">Just Baked</li>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+            <div class="container" id="burger-button" onclick="myFunction()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+    </nav>
+
+    <div class="js-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </div>
+    <div class="contactpic">
+        <h2 id="top">Want to get in touch with us?</h1><br />
+        <h2 id="bottom">CONTACT US</h1>
+    </div>
+    <div id="formDiv">
+        <form id = "contactForm">
+           
+            FIRST NAME: <input id="fname"><br><br>
+            LAST NAME: <br><input id="lname"><br><br>
+            EMAIL: <br><input id="email"><br><br>
+            COMMENTS: <br><textarea id="comments"></textarea><br><br>
+
+            <button id="submit" type="submit">Submit</button><br/><br/>
+        </form>
+    </div>
+    <div style=" display: flex; justify-content: center; height: 20vh;">
+        <p id="message">
+            Thanks! We will get <br> back to you ASAP.
+        </p>
+        <img id="thanks" src="cupcakecartoon.png">
+    </div>
+    
+
+      <div id="fb-root"></div>
+    <script 
+        async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    </script>
+
+    <footer>
+        <h3>Connect With Us:</h3>
+        <a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+        data-lang="en" data-show-count="false">Follow @justbaked7
+        </a>
+        <script
+            async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+        </script>
+        <br /> <br />
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button" data-action="recommend" data-size="small" data-share="true">
+        </div>
+        <br /> <br />
+        <div class="footer-info">
+            <strong>Visit Us:</strong> See our <a href="location.html">locations</a> page <br /> 
+            <strong>Call Us:</strong> (403) 634-9081 <br /> 
+            <strong>Email Us:</strong> <a href = "mailto:justbaked@gmail.com"> 
+                                    justbaked@gmail.com</a></p>
+        </div>
+    </footer>
+    <script language="javascript">
+        function validateEmail(){
+            var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+           if(emailPattern.test($('#email').val())){
+                return true;
+            }else{
+                return false;
+            }   
+        }
+        $(document).ready(function(){
+            $('form').submit( function (e) { 
+                e.preventDefault();
+                if(validateEmail()){
+                    $('#message').slideDown();
+                    $('#thanks').animate({opacity:'100%'}, "slow");
+                }else{
+                    $('#email').val("required");
+                }
+                
+            });  
+        });
+    </script>
+</body>
+</html>

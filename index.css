@@ -19,8 +19,6 @@ nav {
     padding-top: 5px;
     padding-bottom: 5px;
     width: 95%;
-    /*margin-left: auto;
-    margin-right: auto;*/
     text-align: center;
     line-height: -20px;
 }
@@ -29,15 +27,12 @@ nav {
     font-family: 'Righteous', cursive;
     padding-top: 5px;
     padding-bottom: 5px;
-    /*margin-left: auto;
-    margin-right: auto;*/
     text-align: center;
     font-size: 17px;
     margin-top: -4.5em;
 }
 
 .js-nav ul {
-    /*text-align: center;*/
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -55,7 +50,6 @@ nav {
 }
 
 nav ul {
-    /*text-align: center;*/
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -227,7 +221,7 @@ nav ul li a.active {
 }
 
 .main-body {
-    margin: 40px;
+    margin: 40px 60px;
     font-family: 'Sen', sans-serif;
     font-size: 16px;
     line-height: 170%;
@@ -235,8 +229,11 @@ nav ul li a.active {
 
 .flex-container {
     padding-bottom: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 
 .item {

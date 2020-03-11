@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Just Baked</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="cupcake-icon3.png">
+
+    <script>
+
+        function myFunction() {
+            let x = document.querySelector(".js-nav");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+    <link type="text/css" rel="stylesheet" href="locations.css"/>
+
+    <div id="fb-root"></div>
+    <script
+        async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    </script>
+  </head>
+  <body>
+      <nav>
+     <ul>
+         <li class="pageTitle">Just Baked</li>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <li><a href="locations.html" class="active">Locations</a></li>
+         <li><a href="reviews.html">Reviews</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="menu.html">Menu</a></li>
+     </ul>
+         <div class="container" id="burger-button" onclick="myFunction()">
+             <div class="hamburger"></div>
+             <div class="hamburger"></div>
+             <div class="hamburger"></div>
+         </div>
+ </nav>
+
+ <div class="js-nav">
+     <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <li><a href="locations.html">Locations</a></li>
+         <li><a href="reviews.html">Reviews</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="menu.html">Menu</a></li>
+     </ul>
+ </div>
+
+    <iframe src="https://www.google.co.uk/maps/d/embed?mid=1VPqPCg0RtuqjXYM9AUYGDF9_nnuaTcjT"
+      width="640" height="480"></iframe>
+    <h2>Our Locations:</h2>
+
+      <div class = location>
+        <div class = bord>
+        <div class = elem1>
+          Brooklyn, NY
+        </div>
+        </div>
+
+        <div class = bord>
+        <div class = elem1>
+          Cambridge, MA
+        </div>
+        </div>
+
+        <div class = bord>
+        <div class = elem1>
+          Rock Slope, MT
+        </div>
+        </div>
+
+        <div class = bord>
+        <div class = elem1>
+          San Francisco, CA
+        </div>
+        </div>
+
+        <div class = bord>
+        <div class = elem1>
+          Nashville, TN
+        </div>
+        </div>
+
+        <div class = bord>
+        <div class = elem1>
+          Miami Beach, FL
+        </div>
+        </div>
+      </div>
+
+      <div id="fb-root"></div>
+     <script
+         async defer crossorigin="anonymous"
+         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+     </script>
+
+     <footer>
+         <h3>Connect With Us:</h3>
+         <a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+         data-lang="en" data-show-count="false">Follow @justbaked7
+         </a>
+         <script
+             async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+         </script>
+         <br /> <br />
+         <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button" data-action="recommend" data-size="small" data-share="true">
+         </div>
+         <br /> <br />
+         <div class="footer-info">
+             <strong>Visit Us:</strong> See our <a href="location.html">locations</a> page <br />
+             <strong>Call Us:</strong> (403) 634-9081 <br />
+             <strong>Email Us:</strong> <a href = "mailto:justbaked@gmail.com">
+                                     justbaked@gmail.com</a></p>
+         </div>
+     </footer>
+  </body>
+</hmtl>

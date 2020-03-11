@@ -24,28 +24,26 @@ figcaption {
   left: 0%;
   margin: 0 auto;
   border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
-    #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image: linear-gradient(to bottom right, #b827fc, #2c90fc,
+    #b8fd33, #fec837, #fd1892);
   border-image-slice: 1;
 }
 
 .cup2 {
   left: 25%;
   margin: 0 auto;
-  border: 2px solid #000000;
   border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
-    #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image: linear-gradient(to bottom right, #b827fc, #2c90fc,
+    #b8fd33, #fec837, #fd1892);
   border-image-slice: 1;
 }
 
 .cup3 {
   left: 50%;
   margin: 0 auto;
-  border: 2px solid #000000;
   border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
-    #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image: linear-gradient(to bottom right, #b827fc, #2c90fc,
+    #b8fd33, #fec837, #fd1892);
   border-image-slice: 1;
 }
 
@@ -53,8 +51,8 @@ figcaption {
   left: 0%;
   margin: 0 auto;
   border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
-    #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image: linear-gradient(to bottom right, #b827fc, #2c90fc,
+    #b8fd33, #fec837, #fd1892);
   border-image-slice: 1;
 }
 
@@ -62,8 +60,8 @@ figcaption {
   left: 25%;
   margin: 0 auto;
   border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
-    #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image: linear-gradient(to bottom right, #b827fc, #2c90fc,
+    #b8fd33, #fec837, #fd1892);
   border-image-slice: 1;
 }
 
@@ -71,8 +69,8 @@ figcaption {
   left: 50%;
   margin: 0 auto;
   border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
-    #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image: linear-gradient(to bottom right, #b827fc, #2c90fc,
+    #b8fd33, #fec837, #fd1892);
   border-image-slice: 1;
 }
 
@@ -80,8 +78,8 @@ figcaption {
   left: 0%;
   margin: 0 auto;
   border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
-    #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image: linear-gradient(to bottom right, #b827fc, #2c90fc,
+    #b8fd33, #fec837, #fd1892);
   border-image-slice: 1;
 }
 
@@ -89,8 +87,8 @@ figcaption {
   left: 25%;
   margin: 0 auto;
   border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
-    #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image: linear-gradient(to bottom right, #b827fc, #2c90fc,
+    #b8fd33, #fec837, #fd1892);
   border-image-slice: 1;
 }
 
@@ -98,7 +96,26 @@ figcaption {
   left: 50%;
   margin: 0 auto;
   border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
-    #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image: linear-gradient(to bottom right, #b827fc, #2c90fc,
+    #b8fd33, #fec837, #fd1892);
   border-image-slice: 1;
 }
+
+@media screen and (max-width: 675px) {
+    .col1 {
+      display : block;
+    }
+    .col2 {
+      display : block;
+    }
+    .col3 {
+      display : block;
+    }
+    .cup1, .cup2, .cup3, .cup4, .cup5, .cup6, .cup7, .cup8, .cup9 {
+      border: none;
+      margin-left: 30%
+    }
+    figcaption {
+      align-content: flex-start;
+    }
+  }

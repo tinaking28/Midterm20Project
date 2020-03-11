@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Just Baked</title>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="cupcake-icon3.png">
+
+    <script>
+        
+        function myFunction() {
+          let x = document.querySelector(".js-nav");
+              if (x.style.display == "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+          }
+        
+    </script>
+
+    <style type="text/css">
+
+        .col {
+            float: left;
+        }
+
+        .left {
+            width: 60%;
+            margin-top: 20px;
+        }
+
+        .right {
+            width: 40%;
+            min-height: 50vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .right img {
+            display: block;
+            width: 78%;
+            min-width: 100px;
+            max-width: 500px;
+            height: auto;
+            margin: auto;
+            padding: 20px 0px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .main-body-about {
+            margin: 40px 80px;
+            font-family: 'Sen', sans-serif;
+            font-size: 16px;
+            line-height: 170%;
+        }
+
+        @media screen and (max-width: 950px) {
+            .col {
+                width: 100%;
+            }
+
+            .main-body-about {
+                margin: 10px 40px;
+                font-size: 15px;
+            }
+        }
+
+        .main-body-about h1 {
+            font-family: 'Righteous', cursive;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="pageTitle">Just Baked</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+            <div class="container" id="burger-button" onclick="myFunction()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+    </nav>
+
+    <div class="js-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </div>
+
+    <div class="pic">
+        <h1 id="top">Just Baked</h1>
+        <h2 id="bottom">About Us - Our Story</h2>
+    </div>
+
+    <div class="main-body-about">
+        <div class="row">
+            <div class="left col">
+                <h1>Our Story</h1>
+                The owners' love of baking began when they started making cakes and cookies for their kid's birthday parties and special events. After several years of sharing treats with family and friends, they opened the doors to Just Baked in March 2020. We bake homemade cupcakes and sweet treats in an inviting, fun, open kitchen atmosphere. Visit any of our <a href="location.html">locations</a> to enjoy an afternoon cupcake with friends or take a dozen of your favorite flavors to goWhether you're planning a wedding or need a dozen cupcakes for your child's next birthday party, the Just Baked team can't wait to help! Visit our <a href="contact.html">contact</a> page to learn about all the ways to get in touch with us!
+            </div>
+            <div class="right col imgwrap">
+                <img src="yellow-cupcake.jpg" alt="yellow cupcake">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left col">
+                <h1>Our Love For Cupcakes</h1>
+                The perfect cupcake has to start from scratch — merging the finest, freshest ingredients from our kitchen. We don't stock boxes in our kitchen, we strongly believe that a cake made from a mix might as well be forged from the cardboard it was packed in. Cupcakes are, after all, meant to delight both the palette and the eye. This is why we invest as much time sourcing the best ingredients and working on new flavour combinations as we do considering the design and presentation of the finished product. Our award-winning cupcake bakeries offer a variety of freshly baked flavors every day!
+            </div>
+            <div class="right col">
+                <img src="cupcake-case.jpg" alt="cupcake case">
+            </div>
+        </div>
+    </div>
+        
+    <div id="fb-root"></div>
+    <script 
+        async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+    </script>
+
+    <footer>
+        <h3>Connect With Us:</h3>
+        <a href="https://twitter.com/justbaked7?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+        data-lang="en" data-show-count="false">Follow @justbaked7
+        </a>
+        <script
+            async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+        </script>
+        <br /> <br />
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button" data-action="recommend" data-size="small" data-share="true">
+        </div>
+        <br /> <br />
+        <div class="footer-info">
+            <strong>Visit Us:</strong> See our <a href="location.html">locations</a> page <br /> 
+            <strong>Call Us:</strong> (403) 634-9081 <br /> 
+            <strong>Email Us:</strong> <a href = "mailto:justbaked@gmail.com"> 
+                                    justbaked@gmail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
